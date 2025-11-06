@@ -74,7 +74,7 @@ msg3 = """
 def quiz_hash(message):
     hash_value = 0
 
-    for char in enumerate(message):
+    for i, char in enumerate(message):
         char_ascii = ord(char)
         
         hash_value = (hash_value * MULTIPLIER + char_ascii) % MODULUS
